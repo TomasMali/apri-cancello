@@ -23,7 +23,7 @@ bot.onText(/\/start/, (msg) => {
     var telegramUser = msg.from
 
     //  $.sendMessage("Utente (" + telegramUser.firstName + " " + telegramUser.lastName + ")  " + body.message)
-    bot.sendMessage(msg.chat.id, "Welcome " + msg.from.first_name + ", registrazione effettuata correttamente! Adesso puoi unirti ad un tavolo usando il menu Cerca tavola.", {
+    bot.sendMessage(msg.chat.id, "Welcome " + msg.from.first_name + ", registrazione effettuata correttamente! Adesso puoi aprire il cancello.", {
         "reply_markup": {
             "keyboard": [
                 [APRI_CANCELLO]
